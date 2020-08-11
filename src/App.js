@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Example from "./Pages/Example";
 
-export const App = () => {
+const App = () => {
   return (
     <div className="App">
         <Router>
@@ -13,4 +13,6 @@ export const App = () => {
         </Router>
     </div>
   );
-}
+};
+
+export default App;
