@@ -1,7 +1,8 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./Styles/main.scss";
 import Example from "./Pages/Example";
+
 
 const App = () => {
   return (
