@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import {Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Example from "./Pages/Example";
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <Switch>
-      </Switch>
+        <Router>
+            <Switch>
+                <Route exact path={"/"} component={() => <Example />} />
+            </Switch>
+        </Router>
     </div>
   );
 }
-
-export default App;
