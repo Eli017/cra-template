@@ -29,8 +29,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "clean": "rm -rf ./build",
     "build": "react-scripts build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",
+    "test:watch": "yarn test --watchAll",
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "yarn lint --fix"

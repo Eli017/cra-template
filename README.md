@@ -1,68 +1,76 @@
+## Project Details
+
+## Technical Details
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Code Organization
 
-In the project directory, you can run:
+```
+├── src/
+│   ├── Components/
+│   │   └── __tests__/
+│   │      
+│   ├── Pages/
+│   ├── Styles/
+│   ├── App.js
+│   ├── index.js
+```
 
-### `yarn start`
+|                                         | Description                                                                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------ |
+| public                                  | contains static assets to be deployed alongside the react application
+| src                                     | main source directory for the application
+| src/components                          | the source files for reusable components developed for this application
+| src/components/`__tests__`              | tests used for different components within the application
+| src/pages                               | the components that act as the different pages to the application
+| index.tsx                               | the entry point into the react app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Dependencies
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Below is a list of the primary libraries used to support this application. See package.json for the complete list.
 
-### `yarn test`
+| Dependency                                                                             | Description                                                 |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| react-router-dom                                                                       | Application level routing
+| node-sass                                                                              | Compiler for `scss`, `less`, and `sass`
+| prettier                                                                               | Sophisticated linter
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Local Development
 
-### `yarn build`
+#### Installation / Setup
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `git clone <repository-url>` this repository
+- `cd project-directory`
+- `yarn install`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Local Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+|                                 | Description                                                                                                                                    |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `yarn start`                    | Runs application in development mode with hot reload support<br/>Open [http://localhost:3000](http://localhost:3000) to view it in the browser |
+| `yarn lint`<br/>`yarn lint:fix` | Runs ESLint to ensure proper styling and formatting as well as static code analysis for typescript/javascript files                            |
 
-### `yarn eject`
+#### Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This application leverages a number of tools for test coverage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **jest** is used for unit test coverage
+2. **jest-axe** is a jest addon to allow unit tests to validate accessibility of components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+|                      | Description                                                                                                                                     |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `yarn test`          | Executes the unit test suite using jest in watch mode. This differs from `yarn test:watch` in that it will execute tests based on git revisions |
+| `yarn test:watch`    | Executes the unit test suite using jest in watch mode                                                                                           |
+ 
+#### Building
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+|                | Description                                             |
+| -------------- | ------------------------------------------------------- |
+| `yarn clean`   | Cleans build directories                                |
+| `yarn build`   | Builds the application for deployment (production mdoe) |
+| `yarn analyze` | Analyzes build bundle sizes (run `yarn build` first)    |
 
-## Learn More
+### Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project was inspired by DeveloperTown's CRA template.
