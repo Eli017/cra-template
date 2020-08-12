@@ -1,10 +1,11 @@
 {
-  "name": "@elisokeland/cra-template",
+  "name": "@elisokeland/cra-template-elis-sass-test",
   "version": "0.0.10",
   "keywords": [
     "react",
     "create-react-app",
-    "template"
+    "template",
+    "JavaScript"
   ],
   "description": "The base JavaScript template for Eli's sass, prettier, and testing React application.",
   "main": "template.json",
