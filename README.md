@@ -1,8 +1,8 @@
 # @eli017/elis-sass-test
 
 [![Version](https://img.shields.io/npm/v/@eli017/cra-template-elis-sass-test.svg)](https://npmjs.org/package/@eli017/elis-sass-test)
-[![Downloads/week](https://img.shields.io/npm/dw/@developertown/cra-template.svg)](https://npmjs.org/package/@eli017/elis-sass-test)
-![License](https://img.shields.io/npm/l/@eli017/elis-sass-test)
+[![Downloads/week](https://img.shields.io/npm/dw/@eli017/cra-template-elis-sass-test.svg)](https://npmjs.org/package/@eli017/elis-sass-test)
+![License](https://img.shields.io/npm/l/@eli017/cra-template-elis-sass-test)
 
 This is Eli's official template for [Create React App](https://github.com/facebook/create-react-app).
 
