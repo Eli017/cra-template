@@ -8,11 +8,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```
 ├── src/
-│   ├── Components/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── svgs/
+│   ├── components/
 │   │   └── __tests__/
 │   │      
-│   ├── Pages/
-│   ├── Styles/
+│   ├── pages/
+│   ├── contexts/
+│   ├── helpers/
+│   ├── styles/
 │   ├── App.js
 │   ├── index.js
 ```
@@ -21,10 +26,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 | --------------------------------------- | ------------------------------------------------------------------------ |
 | public                                  | contains static assets to be deployed alongside the react application
 | src                                     | main source directory for the application
+| src/assets                              | contains the main static files that are accessed by the React source code
 | src/components                          | the source files for reusable components developed for this application
 | src/components/`__tests__`              | tests used for different components within the application
 | src/pages                               | the components that act as the different pages to the application
+| src/contexts                            | (not included) contains multiple different context providers
+| src/helpers                             | (not included) contains common JS functions for multiple file applications
+| src/styles                              | stores any application styling, use can vary per application
 | index.tsx                               | the entry point into the react app
+
+* While this template is designed to use this structure, this is not a strict requirement.
+  * Keep in mind, it still needs the basic files for React to work.
 
 ### Dependencies
 
@@ -73,4 +85,5 @@ This application leverages a number of tools for test coverage
 
 ### Credits
 
-This project was inspired by DeveloperTown's CRA template.
+The DeveloperTown CRA template inspired this template:
+[DeveloperTown CRA Template](https://github.com/developertown/frontend/tree/master/react/cra-template/template)
